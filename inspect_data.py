@@ -7,3 +7,4 @@ try:
     print("Demographic Columns FULL LIST:", ", ".join(demo.columns.tolist()))
 except Exception as e:
     print(e)
+
