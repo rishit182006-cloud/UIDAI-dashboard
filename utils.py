@@ -2,11 +2,8 @@ import pandas as pd
 
 def load_data():
     enrol = pd.read_csv("data/enrolment_merged_cleaned.csv")
-    bio = pd.read_csv("data/biometric.csv")
-    demo = pd.read_csv("data/demographic.csv")
-
     enrol['date'] = pd.to_datetime(enrol['date'], format="%d-%m-%Y", errors='coerce')
-    return enrol, bio, demo
+    return enrol, None, None
 
 def load_birth_data():
     # Keep the existing birth data logic but also add a way to load population data
