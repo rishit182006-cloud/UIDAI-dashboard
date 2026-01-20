@@ -16,7 +16,7 @@ from analysis import (
 st.set_page_config(layout="wide", page_title="UIDAI 2025 Enrollment Insights")
 
 # Load Data
-enrol, bio, demo = load_data()
+enrol, _, _ = load_data()
 birth_df = load_birth_data()
 pop_df = load_population_data()
 
